@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Checkout - Tech Store</title>
+
+<link rel="stylesheet" href="checkout.css">
+
+</head>
+<body>
+
+<header>
+
+    <div class="logo">
+        <img src="images/logo.png" alt="Tech Store Logo">
+        <h2>Tech Store</h2>
+    </div>
+
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="products.html">Products</a>
+        <a href="cart.html">Cart</a>
+    </nav>
+
+
+
+<h1>Checkout</h1>
+
+</header>
+
+<div class="container">
+
+<div class="customer">
+
+<h2>Customer Details</h2>
+
+<input
+type="text"
+id="name"
+placeholder="Full Name"
+required>
+
+<input
+type="tel"
+id="phone"
+placeholder="Phone Number"
+required>
+
+<input
+type="email"
+id="email"
+placeholder="Email">
+
+<select id="province" required>
+
+<option value="">
+Select Province
+</option>
+
+<option>Western</option>
+<option>Central</option>
+<option>Southern</option>
+<option>Northern</option>
+<option>Eastern</option>
+<option>North Western</option>
+<option>North Central</option>
+<option>Uva</option>
+<option>Sabaragamuwa</option>
+
+</select>
+
+<select id="district" required>
+
+<option value="">
+Select District
+</option>
+
+</select>
+
+<input
+type="text"
+id="city"
+placeholder="City"
+required>
+
+<textarea
+id="address"
+placeholder="Street Address"
+required>
+</textarea>
+
+<input
+type="text"
+id="postcode"
+placeholder="Postal Code">
+
+</div>
+
+<div class="order">
+
+<h2>Order Summary</h2>
+<div class="order-number">
+
+    <strong>Order No :</strong>
+
+    <span id="order-number"></span>
+
+</div>
+<table>
+
+<thead>
+
+<tr>
+<th>Image</th>
+<th>Product</th>
+<th>Price</th>
+<th>Qty</th>
+<th>Total</th>
+
+</tr>
+
+</thead>
+
+<tbody id="order-items">
+
+</tbody>
+
+<tfoot>
+<div class="coupon">
+
+<input
+type="text"
+id="coupon"
+placeholder="Coupon Code">
+
+<button id="apply-coupon">
+
+Apply
+
+</button>
+
+</div>
+<tr>
+
+<td colspan="3">
+Subtotal
+</td>
+
+<td id="subtotal">
+Rs.0
+</td>
+
+</tr>
+
+<tr>
+
+<td colspan="3">
+Delivery
+</td>
+
+<td id="delivery">
+Rs.500
+</td>
+
+</tr>
+
+<tr>
+
+<td colspan="3">
+Discount
+</td>
+
+<td id="discount">
+Rs.0
+</td>
+
+</tr>
+
+<tr>
+
+<td colspan="3">
+
+<strong>
+Grand Total
+</strong>
+
+</td>
+
+<td>
+
+<strong id="grand-total">
+Rs.0
+</strong>
+
+</td>
+
+</tr>
+
+</tfoot>
+
+</table>
+
+<h2>Payment Method</h2>
+
+<label>
+
+<input
+type="radio"
+name="payment"
+value="Cash on Delivery"
+checked>
+
+Cash on Delivery
+
+</label>
+
+<br>
+
+<label>
+
+<input
+type="radio"
+name="payment"
+value="Bank Transfer">
+
+Bank Transfer
+
+</label>
+
+<br>
+
+<label>
+
+<input
+type="radio"
+name="payment"
+value="PayHere">
+
+PayHere
+
+</label>
+<h2>Order Notes</h2>
+
+<textarea
+id="notes"
+placeholder="Any special instructions?">
+</textarea>
+<button id="whatsapp-btn">
+
+Place Order via WhatsApp
+
+</button>
+
+<a href="products.html" class="continue-btn">
+
+← Continue Shopping
+
+</a>
+
+</div>
+
+</div>
+
+<script src="js/checkout.js"></script>
+<script src="js/district.js"></script>
+<script src="js/ordernum.js"></script>
+<script src="js/pay.js"></script>
+
+
+</body>
+</html>

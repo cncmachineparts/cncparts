@@ -1,0 +1,502 @@
+/* ===========================
+   GOOGLE FONT
+=========================== */
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+/* ===========================
+   RESET
+=========================== */
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+
+    font-family:'Poppins',sans-serif;
+    background:#0f172a;
+    color:#ffffff;
+
+}
+
+/* ===========================
+   HEADER
+=========================== */
+
+header{
+
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+
+    padding:18px 8%;
+
+    background:#111827;
+
+    border-bottom:1px solid #1e293b;
+
+}
+
+.logo{
+
+    display:flex;
+    align-items:center;
+    gap:12px;
+
+}
+
+.logo img{
+
+    width:50px;
+
+}
+
+.logo h2{
+
+    color:#38bdf8;
+
+}
+
+nav{
+
+    display:flex;
+    gap:25px;
+
+}
+
+nav a{
+
+    text-decoration:none;
+    color:white;
+    transition:.3s;
+
+}
+
+nav a:hover{
+
+    color:#38bdf8;
+
+}
+
+/* ===========================
+   MAIN CONTAINER
+=========================== */
+
+.container{
+
+    width:90%;
+    max-width:1400px;
+
+    margin:40px auto;
+
+    display:grid;
+    grid-template-columns:2fr 1fr;
+
+    gap:30px;
+
+}
+
+/* ===========================
+   BOXES
+=========================== */
+
+.customer,
+.order{
+
+    background:#1e293b;
+
+    padding:30px;
+
+    border-radius:12px;
+
+    box-shadow:0 5px 15px rgba(0,0,0,.30);
+
+}
+
+.customer h2,
+.order h2{
+
+    margin-bottom:20px;
+
+    color:#38bdf8;
+
+}
+
+/* ===========================
+   INPUTS
+=========================== */
+
+input,
+select,
+textarea{
+
+    width:100%;
+
+    padding:12px 15px;
+
+    margin-bottom:18px;
+
+    border:none;
+
+    border-radius:8px;
+
+    background:#334155;
+
+    color:white;
+
+    font-size:15px;
+
+}
+
+input::placeholder,
+textarea::placeholder{
+
+    color:#cbd5e1;
+
+}
+
+textarea{
+
+    height:100px;
+
+    resize:none;
+
+}
+
+input:focus,
+select:focus,
+textarea:focus{
+
+    outline:2px solid #38bdf8;
+
+}
+
+/* ===========================
+   TABLE
+=========================== */
+
+table{
+
+    width:100%;
+
+    border-collapse:collapse;
+
+    margin-top:20px;
+
+    margin-bottom:20px;
+
+}
+
+table th{
+
+    background:#0f172a;
+
+    color:#38bdf8;
+
+    padding:12px;
+
+}
+
+table td{
+
+    padding:12px;
+
+    text-align:center;
+
+    border-bottom:1px solid #334155;
+
+}
+
+table img{
+
+    width:60px;
+
+    border-radius:6px;
+
+}
+
+/* ===========================
+   ORDER NUMBER
+=========================== */
+
+.order-number{
+
+    margin-bottom:20px;
+
+    background:#0f172a;
+
+    padding:12px;
+
+    border-radius:8px;
+
+    font-weight:600;
+
+}
+
+/* ===========================
+   PAYMENT
+=========================== */
+
+label{
+
+    display:block;
+
+    margin-bottom:15px;
+
+    cursor:pointer;
+
+}
+
+label input{
+
+    width:auto;
+
+    margin-right:10px;
+
+}
+
+/* ===========================
+   COUPON
+=========================== */
+
+.coupon{
+
+    display:flex;
+
+    gap:10px;
+
+    margin-top:20px;
+
+    margin-bottom:20px;
+
+}
+
+.coupon input{
+
+    margin-bottom:0;
+
+}
+
+.coupon button{
+
+    width:120px;
+
+}
+
+/* ===========================
+   BUTTONS
+=========================== */
+
+button{
+
+    width:100%;
+
+    padding:14px;
+
+    border:none;
+
+    border-radius:8px;
+
+    cursor:pointer;
+
+    background:#38bdf8;
+
+    color:white;
+
+    font-size:16px;
+
+    font-weight:bold;
+
+    transition:.3s;
+
+}
+
+button:hover{
+
+    background:#0ea5e9;
+
+}
+
+/* WhatsApp Button */
+
+#whatsapp-btn{
+
+    margin-top:20px;
+
+    background:#22c55e;
+
+}
+
+#whatsapp-btn:hover{
+
+    background:#16a34a;
+
+}
+
+/* Continue Button */
+
+.continue-btn{
+
+    display:block;
+
+    margin-top:15px;
+
+    text-align:center;
+
+    text-decoration:none;
+
+    color:white;
+
+    background:#475569;
+
+    padding:14px;
+
+    border-radius:8px;
+
+    transition:.3s;
+
+}
+
+.continue-btn:hover{
+
+    background:#64748b;
+
+}
+
+/* ===========================
+   TOTALS
+=========================== */
+
+tfoot td{
+
+    font-weight:bold;
+
+    font-size:16px;
+
+}
+
+#grand-total{
+
+    color:#22c55e;
+
+    font-size:22px;
+
+}
+
+/* ===========================
+   TERMS
+=========================== */
+
+.terms{
+
+    margin-top:20px;
+
+}
+
+.terms label{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:10px;
+
+}
+
+/* ===========================
+   FOOTER
+=========================== */
+
+footer{
+
+    margin-top:40px;
+
+    padding:25px;
+
+    background:#111827;
+
+    text-align:center;
+
+    border-top:1px solid #1e293b;
+
+}
+
+/* ===========================
+   MOBILE
+=========================== */
+
+@media(max-width:992px){
+
+.container{
+
+    grid-template-columns:1fr;
+
+}
+
+}
+
+@media(max-width:768px){
+
+header{
+
+    flex-direction:column;
+
+    gap:20px;
+
+}
+
+nav{
+
+    flex-wrap:wrap;
+
+    justify-content:center;
+
+}
+
+table{
+
+    display:block;
+
+    overflow-x:auto;
+
+}
+
+.coupon{
+
+    flex-direction:column;
+
+}
+
+.coupon button{
+
+    width:100%;
+
+}
+
+}
+
+@media(max-width:480px){
+
+.customer,
+.order{
+
+    padding:20px;
+
+}
+
+.logo h2{
+
+    font-size:20px;
+
+}
+
+button{
+
+    font-size:15px;
+
+}
+
+}

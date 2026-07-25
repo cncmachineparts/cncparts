@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shopping Cart - Tech Store</title>
+
+    <link rel="stylesheet" href="cart.css">
+</head>
+<body>
+
+<header>
+
+
+<div class="logo">
+    <img src="images/logo.png" alt="Tech Store Logo">
+    <h2>Tech Store</h2>
+</div>
+
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="products.html">Products</a>
+        <a href="contact.html">Contact</a>
+
+        <a href="signin.html" id="signin-link">Sign In</a>
+
+        <span id="user-status"></span>
+
+        <button id="logout-btn" style="display:none;">
+            Logout
+        </button>
+    </nav>
+
+
+
+</header>
+
+<div class="cart-container">
+
+    <h1>Shopping Cart</h1>
+
+    <table class="cart-table">
+
+        <thead>
+
+            <tr>
+
+                <th>Image</th>
+                <th>Product</th>
+                <th>Unit Price</th>
+                <th>Quantity</th>
+                <th>Item Total</th>
+                <th>Action</th>
+
+            </tr>
+
+        </thead>
+
+        <tbody id="cart-items">
+
+        </tbody>
+
+        <tfoot>
+
+            <tr>
+
+                <td colspan="4"></td>
+
+                <td>
+                    <strong id="total">
+                        Rs. 0
+                    </strong>
+                </td>
+
+                <td></td>
+
+            </tr>
+
+        </tfoot>
+
+    </table>
+
+</div>
+
+ <!-- Coupon -->
+    <div class="coupon-box">
+
+        <input
+            type="text"
+            id="coupon"
+            placeholder="Enter coupon code">
+
+        <button id="apply-coupon">
+            Apply
+        </button>
+
+    </div>
+
+    <!-- Delivery -->
+    <div class="delivery-info">
+        <p>🚚 Estimated Delivery: 3 - 5 Working Days</p>
+    </div>
+
+    <!-- Buttons -->
+    <div class="cart-buttons">
+
+        
+
+        <a href="checkout.html"
+           id="checkout-link"
+           class="checkout-btn">
+            Proceed to Checkout
+        </a>
+
+        <a href="index.html"
+           class="continue-btn">
+            Continue Shopping
+        </a>
+
+    </div>
+
+<footer>
+    <p>&copy; 2026 Tech Store Sri Lanka. All Rights Reserved.</p>
+</footer>
+
+
+<script src="js/cart1.js"></script>
+
+<script src="js/signin.js"></script>
+<script src="js/auth.js"></script>
+
+
+</body>
+</html>
